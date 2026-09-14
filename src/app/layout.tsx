@@ -14,25 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: { template: "%s | M2", default: "M2" },
-  keywords: [
-    "Skirt For Women",
-    "Trouser For Men",
-    "Kid Clothes",
-    "E-commerce",
-    "products",
-    "selling product",
-  ],
-  description:
-    "M2 is the best platform for selling products in ecommerce modern website for Cambodian people.",
+  metadataBase: new URL('https://my-m2-nextjs-rxg9.vercel.app'), // Replace with your actual domain
+  title: 'My Next.js App',
+  description: 'App description',
   openGraph: {
-    title: "M2",
-    description:
-      "M2 is the best platform for selling products in ecommerce modern website for Cambodian people.",
-    images: ["/M2_thumbnail.jpg"],
+    title: 'My Next.js App',
+    description: 'App description',
+    images: ['/M2_thumbnail.jpg'], // Located in public/og-image.png
   },
 };
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
